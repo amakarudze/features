@@ -4,6 +4,7 @@ attrs==18.2.0
 billiard==3.5.0.5
 celery==4.2.1
 Click==7.0
+coverage==4.5.2
 Flask==1.0.2
 Flask-SQLAlchemy==2.3.2
 funcsigs==1.0.2
