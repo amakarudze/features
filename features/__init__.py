@@ -35,4 +35,9 @@ def create_app(test_config=None):
     def hello():
         return 'Feature Requests App'
 
+    # Register views blueprint to provide routes for features app
+    from . import views
+    app.register_blueprint(views.bp)
+    app.add_url_rule('/', endpoint='index')
+
     return app
