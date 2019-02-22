@@ -11,9 +11,9 @@ url = 'http://localhost:5000'
 browser.visit(url)
 
 # She notices 'Feature Requests App' in the browser title.
-assert 'Feature Requests App' in browser.title
+assert 'IWS Feature Requests' in browser.title
 header = browser.find_by_tag('h1').first
-assert 'Feature Requests App' in header.text
+assert 'IWS Feature Requests' in header.text
 
 # She is invited to log in.
 
