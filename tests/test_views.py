@@ -6,4 +6,5 @@ def test_home_view(client):
     response = client.get('/')
     assert response.status == '200 OK'
     html = response.get_data(as_text=True)
-    assert '<title>IWS Feature Requests</title>' in html
+    assert '<title>IWS Feature Requests - Home</title>' in html
+
